@@ -1,5 +1,9 @@
 language: scala
 scala:
-  - 2.12.1
+  - 2.11.8
 jdk:
   - oraclejdk8
+before_install:
+  - docker-compose up -d
+after_script:
+  - docker-compose down -d

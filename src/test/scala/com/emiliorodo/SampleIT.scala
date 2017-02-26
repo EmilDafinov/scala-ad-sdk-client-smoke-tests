@@ -11,7 +11,7 @@ class SampleIT extends FlatSpec with Matchers {
   it should "respond to a call to its dummy endpoint" in {
     //Given
     val httpClient = HttpClientBuilder.create().build()
-    val request = new HttpGet("http://localhost:8000/ping")
+    val request = new HttpGet("http://localhost:8000/health")
 
     //When
     val response = httpClient.execute(request)

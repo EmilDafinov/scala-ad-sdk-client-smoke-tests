@@ -1,6 +1,6 @@
 version: '2'
 services:
   testedService:
-    image: emildafinov-docker-emiliorodo-docker.bintray.io/scala-ad-sdk-client
+    image: emildafinov-docker-docker.bintray.io/scala-ad-sdk-client
     ports:
       - "8000:8000"
